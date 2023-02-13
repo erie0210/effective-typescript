@@ -7,7 +7,7 @@ http://www.yes24.com/Product/Goods/102124327 <br />
 
 
 branches
-[09-type-assertion](https://github.com/erie0210/effective-typescript/tree/09-type-assertion)
-[022-type-widening](https://github.com/erie0210/effective-typescript/tree/022-type-widening) 
-[023-type-narrowing](https://github.com/erie0210/effective-typescript/tree/023-type-narrowing)
-[028-valid-state-type](https://github.com/erie0210/effective-typescript/tree/028-valid-state-type)
+[09-type-assertion](https://github.com/erie0210/effective-typescript/tree/09-type-assertion) <br />
+[022-type-widening](https://github.com/erie0210/effective-typescript/tree/022-type-widening) <br />
+[023-type-narrowing](https://github.com/erie0210/effective-typescript/tree/023-type-narrowing) <br />
+[028-valid-state-type](https://github.com/erie0210/effective-typescript/tree/028-valid-state-type) <br />
