@@ -60,3 +60,47 @@ const vec3D = {x:3, y:5, z:1, address:'123 Seoul'}
 function calculateLengthL2(v: Vector3D) {
     return Math.abs(v.x) + Math.abs(v.y) + Math.abs(v.z)
 }
+
+
+// 클래스와 관련된 덕타이핑은 테스트를 짤 때 유리하다
+class C {
+    foo: string;
+    constructor(foo: string) {
+        this.foo = foo;
+    }
+}
+
+const c = new C('instance of C');
+const d:C = { foo: 'object literal' };
+
+// 예시: 아래와 같은 함수를 테스트하기 위해서
+interface Author {
+    first: string;
+    last: string;
+}
+
+function getAuthors(database: PostgreDB): AUthor[] {
+    const authorRows = database.runQuery(`SELECT FIRST, LAST FROM AUTHORS`);
+    return authorRows.map(row => {first: row[0], last: row[1]})
+}
+
+// 덕타이핑을 이용한 모킹
+interface DB {
+    runQuery: (sql:string) => any[]
+}
+
+function getAuthors(database:DB): Author[] {
+    const authorRows = database.runQuery(`SELECT FIRST, LAST FROM AUTHORS`);
+    return authorRows.map(row => ({first: row[0], last: row[1]}))
+}
+
+test('getAuthors', () => {
+    const authors = getAuthors({
+        runQuery(sql: string) {
+            return [['Toni', 'Morrison']]
+        }
+    });
+    expect(authors).toEqual(([
+        {first: 'Toni', last: 'Morrison'}
+    ]))
+})
