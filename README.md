@@ -15,6 +15,6 @@ branches <br />
 [22 Understand Type Narrowing (타입 좁히기)](https://github.com/erie0210/effective-typescript/tree/022-type-widening) <br />
 [28 Prefer Types That Always Represent Valid States (유효한 상태만 표현하는 타입을 지향하기)](https://github.com/erie0210/effective-typescript/tree/028-valid-state-type) <br />
 [033-use-specific-type](https://github.com/erie0210/effective-typescript/tree/033-use-specific-type)
-[037-branded-type](https://github.com/erie0210/effective-typescript/tree/037-branded-type)
+[037-branded-type-for-nominal-typing](https://github.com/erie0210/effective-typescript/tree/037-branded-type)
 [기타 tagged-union](https://github.com/erie0210/effective-typescript/tree/etc1-tagged-union)
 [기타2 tagged-union](https://github.com/erie0210/effective-typescript/tree/etc2-microservice)
