@@ -10,6 +10,7 @@ branches <br />
 [04 Get Comfortable with Structural Typing(구조적 타이핑에 익숙해지기)](https://github.com/erie0210/effective-typescript/tree/004-structural-typing) <br />
 [08 Know How to Tell Whether a Symbol Is in the Type Space or Value Space (타입 공간과 값 공간의 심벌 구분하기)](https://github.com/erie0210/effective-typescript/tree/008-symbol-space-value-space)<br />
 [09 Prefer Type Declarations to Type Assertions (type-assertion)](https://github.com/erie0210/effective-typescript/tree/09-type-assertion) <br />
+[10 Avoid Object Wrapper Types](https://github.com/erie0210/effective-typescript/tree/10-avoid-wrapper-types) <br />
 [17 Use readonly to Avoid Errors Associated with Mutation (변경 관련된 오류 방지를 위해 readonly 사용하기)](https://github.com/erie0210/effective-typescript/tree/17-use-readonly)<br />
 [21 (타입 넓히기)](https://github.com/erie0210/effective-typescript/tree/023-type-narrowing) <br />
 [22 Understand Type Narrowing (타입 좁히기)](https://github.com/erie0210/effective-typescript/tree/022-type-widening) <br />
