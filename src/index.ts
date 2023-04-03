@@ -36,7 +36,6 @@ function foo(path: string) {
 
 type Branded<T, K> = T & { _brand: K };
 type Money = Branded<number, 'Money'>;
-type UserId = Branded<number, 'UserId'>
 
 declare let money: Money
 
@@ -45,7 +44,7 @@ const money2: Money = Money(123) & {'_brand': 'Money'}; // ok
 console.log(money2)
 
 // use function
-function Money2(value: number): Money {
+function checkMoney(value: number): Money {
     if (value < 0) {
         throw new Error()
     }
@@ -53,7 +52,7 @@ function Money2(value: number): Money {
     return value as Money
 }
 
-const money3: Money = Money2(123)
+const money3: Money = checkMoney(123)
 
 // use class
 class UserId2 {
